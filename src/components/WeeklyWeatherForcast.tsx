@@ -26,7 +26,7 @@ const WeeklyWeatherForcast = (props: IWeeklyWeatherForcastProps) => {
 
   return (
     <ForcastContainer flex={3}>
-      {coords.lat ? (
+      {coords.lat && location ? (
         <>
           <Text>Weekly Forcasts for {selectedLocation}</Text>
           <WeatherCardsContainer>

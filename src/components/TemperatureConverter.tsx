@@ -4,6 +4,7 @@ import {
   Text,
   FieldsContainer,
   Input,
+  SmallText,
 } from '../styled-components'
 import { covertToFahrenheit, covertToCelsius, isNumber } from '../utils/helper'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -41,11 +42,13 @@ const TemperatureConverter = () => {
     <ForcastContainer flex={1}>
       <Text>Temperature Converter</Text>
       <FieldsContainer>
+      <SmallText>Celsius</SmallText>
+
         <Input
           onBlur={handleGetFahrenheit}
           onChange={handleChangeCelsius}
           value={celsius}
-          placeholder={'Celcius'}
+          placeholder={'100'}
         />
 
         <FontAwesomeIcon
@@ -53,12 +56,12 @@ const TemperatureConverter = () => {
           style={{ flex: 1, margin: '0rem 1rem 0rem 1rem' }}
           icon={faArrowsAltH}
         />
-
+        <SmallText>Fahrenheit</SmallText>
         <Input
           onBlur={handleGetCelsius}
           onChange={handleChangeFahrenheit} 
           value={fahrenheit}
-          placeholder={'Fahreheit'}
+          placeholder={'212'}
         />
       </FieldsContainer>
     </ForcastContainer>
