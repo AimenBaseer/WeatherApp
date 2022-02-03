@@ -1,5 +1,5 @@
 
-# Getting Started with Create React.js WeatherApp
+# Getting Started with Create React.js App
 
 ## Available Scripts
 
